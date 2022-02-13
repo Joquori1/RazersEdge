@@ -13,23 +13,111 @@
 			crossorigin="anonymous"
 		/>
 
+		<!-- <script src="js/script.js" defer></script> -->
+		<script src="js/indexMF.js" defer></script>
+		<!-- <script src="https://code.jscharting.com/2.9.0/jscharting.js" defer></script> -->
+
 		<title>The Razors Edge!</title>
 	</head>
 	<body>
-		<div id="title"><h1>Born to Death!</h1></div>
+		<header id="header">
+		<div id="nav" >
+			<!-- class="nav justify-content-center"-->
 
-		<div id="subTitle"><h4>...brought to you by the RazorsEdge</h4></div>
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button
+						class="nav-link active"
+						id="home-tab"
+						data-bs-toggle="tab"
+						data-bs-target="#home"
+						type="button"
+						role="tab"
+						aria-controls="home"
+						aria-selected="true"
+					>
+						Graph #1
+					</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button
+						class="nav-link"
+						id="profile-tab"
+						data-bs-toggle="tab"
+						data-bs-target="#profile"
+						type="button"
+						role="tab"
+						aria-controls="profile"
+						aria-selected="false"
+					>
+						Graph #2
+					</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button
+						class="nav-link"
+						id="contact-tab"
+						data-bs-toggle="tab"
+						data-bs-target="#contact"
+						type="button"
+						role="tab"
+						aria-controls="contact"
+						aria-selected="false"
+					>
+						Graph #3
+					</button>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div
+					class="tab-pane fade show active"
+					id="home"
+					role="tabpanel"
+					aria-labelledby="home-tab"
+				>
+					See how we chart #1...
+				</div>
+				<div
+					class="tab-pane fade"
+					id="profile"
+					role="tabpanel"
+					aria-labelledby="profile-tab"
+				>
+					See chart #2 to demonstate ...
+				</div>
+				<div
+					class="tab-pane fade"
+					id="contact"
+					role="tabpanel"
+					aria-labelledby="contact-tab"
+				>
+					Lastly chart #3 will demonstate ...
+				</div>
+			</div>
 
-		<p id="intro" class="">
+			<div id="title" style="margin: 30px 50px 10px 50px;"><h1>Born to Death!</h1>
+			</div>
+	
+			<div id="subTitle">
+				<h4 style="margin: 0px 50px 10px 50px;">...brought to you by the RazorsEdge</h4>
+			</div>
+		</header>
+			<!---->
+			<hr />
+		</div>
+
+
+		<p style="margin: 30px 50px 10px 50px;" id="intro" class="">
 			Introducing to you to Front-end Data Visualization, using JavaScript
 			Charting
 		</p>
 
 		<br /><br />
 
+		<!--canvas for the chart-->
 		<div
 			id="chartDiv"
-			style="width: 50%; height: 300px; margin: 0 auto"
+			style="width: 50%; height: 350px; margin: 0 auto"
 		></div>
 
 		<!-- Option 1: Bootstrap Bundle with Popper -->
@@ -39,8 +127,9 @@
 			crossorigin="anonymous"
 		></script>
 
-		<script src="js/script.js"></script>
-		<script src="js/index.js"></script>
+ <!-- place in head using defer -->
+		<!-- <script src="js/script.js"></script>
+		<script src="js/index.js"></script> -->
 	</body>
 	<script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
 </html>
