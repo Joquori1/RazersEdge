@@ -77,3 +77,4 @@ function BuildChart(labels, values, chartTitle) {
 	});
 	return myChart;
 }
+
