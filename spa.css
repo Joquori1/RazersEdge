@@ -1,0 +1,208 @@
+/**** DEFAULTS ****/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;  /* 1rem will equal this now */
+    line-height: 1.6;
+    font-family: sans-serif; /* add google fonts */
+}
+
+header {
+    height: 145px;
+    width: 100%;
+    background-color: rgb(69, 68, 68);
+    background-repeat: no-repeat;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+/* body{
+    margin: 0px;
+} */
+
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+main {
+    display: flex;
+}
+
+footer ul {
+background-color: rgb(53, 52, 52);
+/* margin: 10px auto 0px auto; */
+/* clear: both; */
+height: 2.5rem;
+}
+
+/**** PAGES ****/
+.main {
+    display:flex;
+    --s: 100px;  /* size  */
+    --m: 9px;    /* margin */
+    --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
+    /* 1.732 */
+  }
+
+.big{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.container button.btn {
+margin: auto;
+}
+
+.canvas {
+/* width: 80%; */
+width: 80vw;
+/* height: 400px; */
+height: 50vh;
+margin: auto;
+background-color: dimGray;
+background-repeat: no-repeat; 
+}
+
+.container {
+font-size: 0; /*disable white space between inline block element */
+}
+
+.container div {
+width: calc(var(--s)*1.75);
+margin: var(--m);
+height: calc(var(--s)*2.0207); 
+/* 2.0207 */
+/* 1.00x = 1.1547 */
+/* 1.75x = 2.0207 */
+/* 2.00x = 2.3094 */
+display: inline-block;
+font-size:initial;
+clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+/* background-image: url(./earth_HEX.jpeg); */
+background: gray;
+margin-bottom: calc(var(--m) - var(--s)*0.577);
+/* 0.2885  */
+}
+
+.container div:nth-child(odd) {
+/* background:green; */
+}
+
+.container::before {
+content: "";
+width: calc((var(--s) + var(--m))*.88);
+/* .88 */
+/* width: calc(var(--s)/2 + var(--m)); */
+float: left;
+height: 75%;
+shape-outside: repeating-linear-gradient(     
+                #0000 0 calc(var(--f) - 3px),      
+                #000  0 var(--f));
+}
+
+.dropdown {
+margin: 12px auto 18px auto;
+}
+
+.footerWrapper {
+margin: 60px auto 0px auto;
+}
+
+.main {
+flex-grow: 1;
+}
+
+.container-01 {
+position: relative;
+}
+
+.page{
+    display: none;
+    width: 100%;
+    min-height: 100%; /* allow for content off the bottom of the page */
+    position: fixed;  /* or absolute if the user needs to scroll for more content */
+    padding: 1rem 2rem;
+}
+.active{
+    display: block; 
+    width: 100%;
+}
+
+.hide {
+    display: none;
+  }
+
+#home .line {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: goldenrod;
+  }
+
+#home {
+    display: inline-block;
+    padding: 0;
+    background-color: dimgray;
+}
+
+
+  
+#temp{
+    background-color: dimgray;
+}
+#pop{
+    background-color: dimgray;
+}
+
+.container-01 a:hover + #graph-1 {
+/* z-index: 3; */
+/* background-image: url("./img/people_HEX.jpeg"); */
+opacity: 0.6;  
+}
+
+.container a:hover + #graph-2 {
+/* z-index: 3; */
+/* background-image: url("./img/people_HEX.jpeg"); */
+opacity: 0.6;  
+}
+
+.container a:hover + #graph-3 {
+/* z-index: 3; */
+/* background-image: url("./img/people_HEX.jpeg"); */
+opacity: 0.6;  
+}
+
+
+#graph-01:hover .hidden.btn.btn-primary {
+display: inline-block;
+}
+
+#graph-1 {
+/* background-color: #000; */
+background-repeat: no-repeat; 
+}
+
+#graph-2 {
+/* background-image: url(./people_HEX.jpeg);      */
+}
+
+#graph-2:hover {
+opacity: 0.3;  
+}
+
+#graph-3 {
+/* background-image: url(./rollsRoyce_HEX.jpeg);      */
+}
+
+#graph-3:hover {
+opacity: 0.3;  
+}
+
