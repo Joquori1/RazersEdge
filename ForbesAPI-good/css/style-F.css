@@ -1,0 +1,33 @@
+body {
+	background: #1d1f20;
+	margin-top: 20px;
+	padding: 16px;
+}
+
+canvas {
+	border: 1px dotted red;
+	background-color: currentColor;
+	padding: 20px 20px;
+}
+
+.chart-container {
+	position: relative;
+	margin: auto;
+	height: 80vh;
+	width: 80vw;
+}
+
+#numb {
+	color: black;
+}
+
+form {
+	text-align: center;
+	margin: 20px 20px;
+	color: whitesmoke;
+}
+
+h1 {
+	color: whitesmoke;
+	text-align: center;
+}
