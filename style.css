@@ -1,0 +1,162 @@
+.main {
+    display:flex;
+    --s: 100px;  /* size  */
+    --m: 9px;    /* margin */
+    --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
+    /* 1.732 */
+  }
+
+  .container button.btn {
+    margin: auto;
+  }
+
+  .canvas {
+    /* width: 80%; */
+    width: 80vw;
+    /* height: 400px; */
+    height: 50vh;
+    margin: auto;
+    background-color: dimGray;
+    background-repeat: no-repeat; 
+  }
+
+  .container {
+    font-size: 0; /*disable white space between inline block element */
+  }
+
+  .container div {
+    width: calc(var(--s)*1.75);
+    margin: var(--m);
+    height: calc(var(--s)*2.0207); 
+    /* 1.00x = 1.1547 */
+    /* 1.75x = 2.0207 */
+    /* 2.00x = 2.3094 */
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    /* background-image: url(./earth_HEX.jpeg); */
+    background: gray;
+    margin-bottom: calc(var(--m) - var(--s)*0.577);
+    /* 0.2885  */
+  }
+
+  .container div:nth-child(odd) {
+    /* background:green; */
+  }
+
+  .container::before {
+    content: "";
+    width: calc((var(--s) + var(--m))*.88);
+    /* width: calc(var(--s)/2 + var(--m)); */
+    float: left;
+    height: 75%;
+    shape-outside: repeating-linear-gradient(     
+                    #0000 0 calc(var(--f) - 3px),      
+                    #000  0 var(--f));
+  }
+
+  .dropdown {
+    margin: 12px auto 18px auto;
+  }
+
+  .footerWrapper {
+    margin: 60px auto 0px auto;
+  }
+
+  .line {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: goldenrod;
+  }
+
+  .main {
+    flex-grow: 1;
+  }
+
+  .container-01 {
+    position: relative;
+  }
+
+  a.link {
+    position: absolute;
+    width: calc(var(--s)*1.75);
+    margin: var(--m);
+    height: calc(var(--s)*2.0207); 
+    z-index: 10;
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    margin-bottom: calc(var(--m) - var(--s)*0.577);
+  }
+
+  #graph-1 {
+    /* background-color: #000; */
+    background-repeat: no-repeat; 
+  }
+
+  .container a:hover + #graph-1 {
+    /* z-index: 3; */
+    /* background-image: url("./img/people_HEX.jpeg"); */
+    opacity: 0.6;  
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #graph-01:hover .hidden.btn.btn-primary {
+    display: inline-block;
+  }
+
+
+
+  #graph-2 {
+    /* background-image: url(./people_HEX.jpeg);      */
+  }
+
+  #graph-2:hover {
+    opacity: 0.3;  
+  }
+
+  #graph-3 {
+    /* background-image: url(./rollsRoyce_HEX.jpeg);      */
+  }
+
+  #graph-3:hover {
+    opacity: 0.3;  
+  }
+
+  header {
+    height: 145px;
+    background-color: rgb(69, 68, 68);
+    background-repeat: no-repeat;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  h6 {
+    color: silver;
+    font-family: 'Spartan', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  
+  body {
+    background-color: dimGray;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;   
+  }
+
+  footer ul {
+    background-color: rgb(53, 52, 52);
+    /* margin: 10px auto 0px auto; */
+    /* clear: both; */
+    height: 2.5rem;
+  }
+
+
