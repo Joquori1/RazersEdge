@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    top: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h5 {
+    font-family: 'Spartan', sans-serif;
+    display: block;
+    color: silver;
+    margin: 12px 2em 12px 2em;
+    text-align: center;
+}
+
+#home .main .container {
+    font-size: 0; /*disable white space between inline block element */
+  }
+
+#home .main .container div {
+    width: calc(var(--s)*1.75);
+    margin: var(--m);
+    height: calc(var(--s)*2.0207); 
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    background-color: gray;
+    margin-bottom: calc(var(--m) - var(--s)*0.577);
+}
+
+#home .main .container div:nth-child(odd) {
+}
+
+#home .main .container::before {
+    content: "";
+    width: calc((var(--s) + var(--m)) - 15px);
+    /* .88 */
+    /* width: calc(var(--s)/2 + var(--m)); */
+    float: left;
+    height: 110%;
+    shape-outside: repeating-linear-gradient(     
+                transparent 0 calc(var(--f) - 2px),      
+                #fff  0 var(--f));
+    color: blue;            
+}
+
+.main {
+    display:flex;
+    --s: 100px;  /* size of a hexagon */
+    --m: 9px;    /* margin */
+    --f: calc(3 * var(--s) + 4.88 * var(--m)  - 1px);
+    /* 1.732 */
+  }
+
+.canvas {
+    display: block;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    background-color: gray;
+    background-repeat: no-repeat; 
+}
+
+.dropdown {
+    margin: 12px auto 18px auto;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page .main-2 .container-2 div {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page .main-2 .container-2 .canvas div {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#track-forbes {
+    display: inline-block;
+}
+
+.content {
+    flex: 1;
+    overflow: auto;
+    background: gray;
+    /* min-height: calc(100vh - 175px); */
+    padding-bottom: 50px;
+}
+
+.main-2 .container-2 .dropdown .button .btn button{
+    margin: auto;
+}
+
+.page {
+    margin: auto;
+}
+#graph-1:hover {
+    opacity: 0.6;  
+}
+    
+#graph-2:hover {
+    opacity: 0.6;  
+}
+
+#graph-3:hover {
+    opacity: 0.6;  
+}
+
+#header {
+    height: 83px;
+    width: 100%;
+    background-color: rgb(69, 68, 68);
+    background-image: url(../images/logo-lt-150.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 0 0 0 0;
+    display: block;
+    top: 0;
+}
+
+.nav-top {
+    list-style-type: none;
+    margin: 0;  
+    padding: 0;
+    overflow: hidden;  
+    background-color: rgb(53, 52, 52);
+    flex-shrink: 0;
+    clear: both;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-bottom: 4px solid goldenrod;
+}
+
+.footer {
+    list-style-type: none;
+    margin: 0;  
+    padding: 0;
+    overflow: hidden;  
+    background-color: rgb(53, 52, 52);
+    flex-shrink: 0;
+    clear: both;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-top: 4px solid goldenrod;
+}
+
+.footer li {
+    /* float: left; */
+    display: inline-block;
+}
+
+.nav-top li {
+    /* float: left; */
+    display: inline-block;
+}
+
+.footer li a {
+    font-size: .75rem;
+    display: block;
+    color: darkgray;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+.nav-top li a {
+    font-size: .75rem;
+    display: block;
+    color: darkgray;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+.footer li a:hover {
+    color: aliceblue;
+}
+
+.nav-top li a:hover {
+    color: aliceblue;
+}
+
+@media screen and (min-width: 700px) {
+    #home .main .container::before {
+        content: "";
+        width: calc((var(--s) + var(--m)) + 5vw);
+        /* .88 */
+        /* width: calc(var(--s)/2 + var(--m)); */
+        float: left;
+        height: 110%;
+        shape-outside: border-box;
+        color: blue;            
+    }
+}
