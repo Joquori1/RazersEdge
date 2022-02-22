@@ -17,13 +17,13 @@
 	<body>
 		<h1>Hello...testing</h1>
 
-		<form id="frm">
+		<form id="form" action="js/scriptF.js" method="post">
 			<fieldset>
 				<legend>Forbes Top Wealth List:</legend>
-				<label for="num">Enter # between 1-20:</label><br />
-				<input id="num" type="text" name="num" /><br />
+				<label for="numb">Enter # between 1-20:</label><br />
+				<input id="numb" type="text" name="numb" /><br />
 				<br />
-				<input id="btn" type="submit" value="Enter" />
+				<input type="submit" value="Enter" />
 			</fieldset>
 		</form>
 
@@ -31,7 +31,7 @@
 			<canvas id="myChart"></canvas>
 		</div>
 
-		<script src="js/script-Fcopy.js"></script>
+		<script src="js/script-F.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 	</body>
 </html>

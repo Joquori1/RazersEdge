@@ -1,40 +1,25 @@
-const frm = document.getElementById("form");
-console.log(`hello ${frm}`);
-alert(`hello1 ${frm}`);
+let fform = document.getElementById("form");
+let num = (document.getElementById("numb").innerHTML = "15");
 
-function number() {
-	let input = document.getElementById("num").value;
-	console.log(input);
-	alert(input);
-}
+let tNumb = (document.getElementsByTagName("input").innerHTML = num);
+console.log(+tNumb);
 
-document.getElementById("btn").addEventListener("click", function () {
-	alert(
-		"Great! '\n'Listing # is submitted... look at your Forbes List below."
-	);
+fform.addEventListener("submit", (e) => {
+	e.preventDefault();
+	console.log("yes");
 });
-// change to yellow when on focus
-document.getElementById("num").addEventListener("focus", function () {
-	console.log(this);
-	this.style.background = "yellow";
-});
-//change back to white when off focus or submitted form
-document.getElementById("num").addEventListener("blur", function () {
-	console.log(this);
-	this.style.background = "white";
-});
-input = document.getElementById("num").innerHTML = "";
 
-if (input != "") {
+if (tNumb != "") {
 	console.log("# submitted!");
-	console.log(input);
-	// return input;
+	console.log(tNumb);
+	// return tNumb;
 } else {
-	alert("Must enter # from 1 to 20");
+	alert("Must enter # between 1 - 20");
 }
-////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////
 // Fetch Data from API
-fetch(`https://forbes400.herokuapp.com/api/forbes400?limit=${input}`)
+fetch(`https://forbes400.herokuapp.com/api/forbes400?limit=${tNumb}`)
 	.then((response) => {
 		if (response.status != 200) {
 			console.log(
