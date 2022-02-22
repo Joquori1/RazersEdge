@@ -1,0 +1,8 @@
+.container {
+	align-items: center;
+	width: 70%;
+	height: auto;
+}
+#issMap {
+	height: 480px;
+}
