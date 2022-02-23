@@ -1,12 +1,12 @@
 body {
-	background: #1d1f20;
+	background: #1d1f2057;
 	margin-top: 20px;
 	padding: 16px;
 }
 
 canvas {
 	border: 1px dotted red;
-	background-color: rgb(93, 90, 90);
+	background-color: whitesmoke;
 	padding: 20px 20px;
 }
 
@@ -17,18 +17,14 @@ canvas {
 	width: 80vw;
 }
 
-#myChart {
-	position: absolute;
-	position: inherit;
-}
-
 #numb {
-	color: black;
+	color: rgba(0, 0, 0, 1);
 }
 
 form {
 	text-align: center;
 	margin: 20px 20px;
+
 	color: whitesmoke;
 }
 

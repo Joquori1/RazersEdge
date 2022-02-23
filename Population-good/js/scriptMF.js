@@ -5,7 +5,7 @@ fetch("https://data.cdc.gov/resource/w9j2-ggv5.csv")
 	.then(function (text) {
 		let series = csvToSeries(text);
 		renderChart(series);
-		console.log(series);
+		// console.log(series);
 	})
 	.catch(function (error) {
 		//Something went wrong
@@ -42,7 +42,7 @@ function renderChart(series) {
 				position: "bottom left",
 			},
 		],
-		legend_visible: false,
+		legend_visible: true,
 		xAxis_crosshair_enabled: true,
 		defaultSeries_lastPoint_label_text: "<b>%seriesName</b>",
 		defaultPoint_tooltip: "%seriesName <b>%yValue</b> years",
