@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Razors Edge Data Visualization</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
-    <!-- * * * Script Files * * * -->
-    <script type="module" src="./scripts/main.js" defer></script>
-    <script type="module" src="./scripts/script-S.js" defer></script>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="header" id="header"></div>
-        <!-- * * * Nav Bar * * * -->
-        <div class="footer-wrapper" id="navbar-top">
-            <ul class="nav-top">
-              <li class="footer-item">
-                <a href="#" class="previous">&laquo; Previous</a>
-                <!-- <a class="footer-link active" aria-current="page" href="#">Back</a> -->
-              </li>
-              <li class="footer-item">
-                <a class="footer-link" href="./index.html">Home</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="next">Next &raquo;</a>
-                <!-- <a class="footer-link" href="#">Next</a> -->
-              </li>
-            </ul>
-          </div>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CDC Life Expectancy | 1900 to Present Day</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- * * * links to CSS * * * -->
+        <link rel="stylesheet" href="./styles/style-P.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+	</head>
+	<body>
+        <div class="wrapper">
+            <div class="header" id="header"></div>
+                <!-- * * * Nav Bar * * * -->
+                <div class="footer-wrapper" id="navbar-top">
+                    <ul class="nav-top">
+                      <li class="footer-item">
+                        <a class="footer-link" id="home-button-p1" href="./index.html">Home</a>
+                      </li>
+                    </ul>
+                </div>
+            
+            <div class="content">
+                <div style="height:1000px">
+                    <div class="page" id="home" style="display: block">
+                    
+                        <h5 style="margin: 8px auto 16px auto;">US Population Life Expectancy</h5>
 
-        <div class="content">
-            <div style="height:1000px;">
+                        <div class="main-2" style="display: block; text-align: center">
+                            <div class="container-2">
 
+                                <div class="dropdown">
+                                    <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" style= "display: inline-block;"  data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Inputs
+                                    </button>
+                                    <ul class="dropdown-menu" id="dropdown-pop" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" id="dropdown-item-1" href="#">White-Black</a></li>
+                                        <li><a class="dropdown-item" id="dropdown-item-2" href="#">Male-Female</a></li>
+                                    </ul> -->
+                                    <!-- <button type="button" class="btn btn-warning" id="button-pop" style="display: inline-block; margin-left: 12px"><ion-icon name="stats-chart-outline"></ion-icon> Chart It</button> -->
+                                </div>
+                            <br>
+                                <!-- * * Canvas for Placeholder Image -->
+                                <!-- <div class="container-canvas" id="canvas-pop" style="display: inline-block; margin: 20px auto; width: 600px">
+                                    <div class="canvas" id="image-pop" style="display: block; width: 100%; background-image: url(./images/usPop-bg.jpg)">
+                                    </div>
+                                </div> -->
 
+                                <!-- * * Canvas for Graph -->
+                                
+                                <div
+                                    id="chartDiv"
+                                    style="width: 50%; height: 400px; margin: 0 auto"
+                                ></div>
 
+                            
+                                </div>
+                            </div>
 
+                    </div>
 
-            </div>
+                </div>
+            </div>  
+                
+                <footer class="footer-wrapper">
+                    <ul class="footer">
+                      <li class="footer-item">
+                        <a class="footer-link active"  id="home-button-p2" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link" id="project-button-p1" href="./project.html">Project</a>
+                      </li>
+                      <li class="footer-item">
+                        <a class="footer-link" id="team-button-p1" href="./team.html">Team</a>
+                      </li>
+                    </ul>
+                </footer>
         </div>
-        <!-- Audio player -->
-        <!-- <div class="essential_audio" data-url="./mp3/dataAloe.mp3" data-autoplay data-loop></div> -->
-        <!-- * * * FOOTER * * *  -->
-        <footer class="footer-wrapper">
-            <ul class="footer">
-              <li class="footer-item">
-                <a class="footer-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link" href="./project.html">Project</a>
-              </li>
-              <li class="footer-item">
-                <a class="footer-link" href="./team.html">Team</a>
-              </li>
-            </ul>
-        </footer>
-    </div>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Script links for ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- * * * links to CSS * * * -->
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/style-S.css">
-    <!-- * * * links to ESSENTIAL AUDIO files * * * -->
-    <script src="essential_audio.js"></script>
-    <link rel="stylesheet" href="./styles/essential_audio.css"></link>
-    <!-- * * * link to our JS SCRIPT files * * * -->
-    <!-- <script src="./script.js"></script> -->
-</body>
+
+	</body>
+	<script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+
+	<script src="./scripts/scriptMF.js"></script>
+	<script src="./scripts/script-P.js"></script>
+
+	<!-- <script src="js/indexMF-drft.js"></script> -->
+	<!-- <script src="js/scriptBW.js"></script> -->
+
+	<!-- <script src="js/indexMrg-drft.js"></script>
+	<script src="js/indexMrg.js"></script> -->
 </html>

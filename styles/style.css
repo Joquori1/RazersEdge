@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+html, body {    
     height: 100%;
     margin: 0;
 }
@@ -113,6 +113,7 @@ h5 {
 .page {
     margin: auto;
 }
+
 #graph-1:hover {
     opacity: 0.6;  
 }
@@ -124,6 +125,11 @@ h5 {
 #graph-3:hover {
     opacity: 0.6;  
 }
+
+#graph-4:hover {
+    opacity: 0.6;  
+}
+
 
 #header {
     height: 83px;
@@ -213,4 +219,47 @@ h5 {
         shape-outside: border-box;
         color: blue;            
     }
+}
+
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+    background: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 1em;
+    padding: 0 0.5em;
+}
+
+[data-tooltip]:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0; 
+    width: 150px;
+    margin: 0 75px 50px 75px;
+    transform:translateX(-50%);
+    bottom: 25px;
+    padding: 0.5em;
+    background-color: rgba(red, green, blue, alpha);
+    border-radius: 0.25em;
+    color: white;
+    text-shadow: 2px 2px rgb(33, 29, 29);
+    text-align: center;
+    transition:0.2s;
+}
+
+[data-tooltip]:after {
+    content: "";
+    position: absolute;
+    opacity: 0; 
+    bottom: 15px;  
+    margin-left: -5px; 
+    border: 5px solid black;
+    border-color: black transparent transparent transparent;
+    transition:0.2s;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  opacity: 1; 
 }

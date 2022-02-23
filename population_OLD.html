@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Temperatures 1800-Present</title>
+    <title>CDC Life Expectancy | 1900 to Present Day</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
     <!-- * * * Script Files * * * -->
-    <script type="module" src="./scripts/main.js" defer></script>
-    <script type="module" src="./scripts/script-S.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0" defer></script>
 </head>
 <body>
+
+  <div id="chartDiv" style="display: block; width: 50%; height: 400px; margin: 0 auto">
+  </div>
+
     <div class="wrapper">
         <div class="header" id="header"></div>
+
         <!-- * * * Nav Bar * * * -->
+
         <div class="footer-wrapper" id="navbar-top">
             <ul class="nav-top">
               <li class="footer-item">
@@ -26,39 +29,53 @@
             </ul>
           </div>
 
+          
+
         <div class="content">
-            <div style="height:1000px;">
-              <!-- * * * start TEMPERATURE page * * * -->
+            <div style="height:1000px">
+
+              <!-- * * * start POPULATION [4 of 7] page * * * -->
+
             <div class="page" id="home" style="display: block">
 
-              <h5 id="h5-chart" style="display: block; margin: 8px auto 16px auto">Charting Global Average Temperature</h5>
+              <h5 style="margin: 8px auto 16px auto;">US Population Life Expectancy</h5>
 
-              <div class="main-2">
+              <div class="main-2" style="display: block; text-align: center">
                 <div class="container-2">
+
                   <!-- * * Bootstrap Form * * -->
                   <!-- TO DO: 1) center canvas on page  -->
+
                   <div class="dropdown">
-                    <button type="button" class="btn btn-warning" id="button-temp" style="display: inline-block; margin-left: 12px"><ion-icon name="stats-chart-outline"></ion-icon> Chart It</button>
-                  </div>
-                </div>
-                <!-- * * Canvas for Placeholder -->
-                <div class="container-canvas" id="canvas-temp" style="display: flex; margin: 20px auto; justify-content: center;">
-                  <!-- * * Placeholder Image * * -->
-                  <div class="canvas" id="image-temp" style="width: 100%; background-image: url(./images/temp-bg-35.jpg)">
-                  </div>
-                </div>
-                  <!-- * * Temperature Graphs * * -->
-                  <div id="graphs-temp" style="display: none">
-                  <h5 id="h5-temp" style="display: none; margin: 8px auto 16px auto">Global Average Temperatures 1880-Present</h5>
-		              <canvas id="myChart" style="width: 400px; height: 200px; background-color: lightgray"></canvas>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" style= "display: none;"  data-bs-toggle="dropdown" aria-expanded="false">
+                      Select Inputs
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">White-Black</a></li>
+                      <li><a class="dropdown-item" href="#">Male-Female</a></li>
+                    </ul>
+                    <button type="button" class="btn btn-warning" id="button-pop" style="display: none; margin-left: 12px"><ion-icon name="stats-chart-outline"></ion-icon> Chart It</button>
                   </div>
 
+                  <!-- * * Canvas for Placeholder Image -->
 
-              </div>
+                  <div class="container-canvas" id="canvas-pop" style="display: none; margin: 20px auto; width: 600px">
+                    <div class="canvas" id="image-pop" style="width: 100%; background-image: url(./images/usPop-bg.jpg)">
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>            
             </div>
-            <!-- * * * end TEMPERATURE page * * * -->
-            </div>
+
+            <!-- * * * end POPULATION page * * * -->
+
+          </div>
         </div>
+        
+        <!-- * * Canvas for Graphs * * -->
+        
+        <!-- * * * FOOTER * * *  -->
 
         <footer class="footer-wrapper">
             <ul class="footer">
@@ -74,6 +91,7 @@
             </ul>
         </footer>
     </div>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Script links for ionicons -->
@@ -81,8 +99,11 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- * * * links to CSS * * * -->
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/style-S.css">
-    <!-- * * * link to JS SCRIPT files * * * -->
-    <script src="./scripts/script-N-multi.js"></script>
+    <!-- <link rel="stylesheet" href="./styles/style-S.css"> -->
+    <!-- * * * link to our JS SCRIPT files * * * -->
+    <!-- <script src="./script.js"></script> -->
 </body>
+  <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+  <!-- <script src="./scripts/scriptBW.js"></script> -->
+  <script src="./scripts/scriptMF.js"></script>
 </html>

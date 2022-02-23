@@ -1,0 +1,29 @@
+/* 
+body {
+	background: #313536;
+	padding: 16px;
+}
+canvas {
+	border: 1.5px dotted red;
+}
+#chart {
+	background-color: #c4c6c7;
+	font: 700;
+}
+.chart-container {
+	position: relative;
+	margin: auto;
+	height: 80vh;
+	width: 80vw;
+}
+.container-title {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#title {
+	color: rgb(185, 148, 55);
+	color-scheme: rgba(255, 99, 132, 0.5);
+	position: relative;
+} 
+*/

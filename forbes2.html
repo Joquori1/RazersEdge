@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
     <!-- * * * Script Files * * * -->
     <script type="module" src="./scripts/main.js" defer></script>
-    <script type="module" src="./scripts/script-S.js" defer></script>
+    <script type="module" src="./scripts/script-F.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -26,33 +26,35 @@
           </div>
 
         <div class="content">
-            <div style="height:1000px;">
-                <!-- * * * start TEAM page * * * -->
-            <div class="page" id="team" style="display: block">
-
-                <div class="text-div" style="max-width: 600px; margin: 0 auto">
-                  <h5 style="margin: 16px auto 16px auto;">Team</h5>
-                  <h6 style="margin: 0 3%; color: silver">Timothy Peters</h6> <br>
-                  <img src="./images/Tim-Snoopy-100.jpeg" alt="Snoopy cartoon" style="float: left; margin: 0 20px 20px 20px; border-radius: 5%">
-                  <p style="font-size: smaller; margin: 0 3%; color: silver">Previous 6+ yrs experience in VB/VBS/ASP3 development. 2003 had a 15-year coding hiatus. Coming full circle back with a fascination in JS & Blockchain.</p>
-                  <br>
-                  <br>             
-                  <h6 style="margin: 0 3%; color: silver; white-space: normal; white-space: nowrap; overflow: hidden; clear: both">Joquori Holland</h6> <br>
-                  <img src="./images/Joquori-100.jpg" alt="Joquori Holland" style="float: right; margin: 0 20px 20px 20px; border-radius: 5%">
-                  <p style="font-size: smaller; margin: 0 3%; color: silver">Creative with 5+ years in Interdisciplinary Arts + Tech engineering. Learning to master the infrastructure of Full Stack to Blockchain Dev and its fusion with the art world.</p>
-                  <br>
-                  <h6 style="margin: 0 3%; color: silver; white-space: normal; white-space: nowrap; overflow: hidden; clear: both">Taren Pang</h6> <br>
-                  <img src="./images/Taren-100.jpg" alt="Snoopy cartoon" style="float: left; margin: 0 20px;  border-radius: 5%">
-                  <p style="font-size: smaller; margin: 0 3%; color: silver">Blockchain and Web3 enthusiast. Previous architectural design background. Learning JS and Full Stack Development so that I can make an impact in this field.</p>
-                  <br>         
+          <div style="height:1000px;">
+            <div class="page" id="home" style="display: block">
+              <h5 style="margin: 8px auto 0 auto;">Charting the Highest Net Worth Individuals</h5>
+              <form action="" method="GET" enctype="multipart/form-data" id="form">
+                <div>
+                  <fieldset>
+                    
+                    <label class="form-label" for="typeNumber" style="display: block; text-align: center; margin: 0px 12px 8px 0px; font-size: .9em; color: rgb(194, 171, 111)">Enter a number from 1 to 20:</label>
+                    <input
+                      type="number"
+                      name="num"
+                      id="num"
+                      required
+                      min="1"
+                      max="20"
+                      style="margin: 0 5px; width: 50px; height: 35px; background-color: lightgray; border-radius: 8%"
+                    />
+                    <button type="reset" style="margin: 0 5px; width: 70px; height: 35px; background-color: rgb(216, 188, 116); border-radius: 8%">Clear</button>
+                    <!-- <button type="submit">Submit</button> -->
+                    <button type="submit" class="btn btn-warning" id="chart-forbes" style="display: inline-block; margin: 8px 5px; width: 102px; height: 35px"><ion-icon name="stats-chart-outline"></ion-icon> Chart It</button>
+                  </fieldset>
                 </div>
-              </div>
-              <!-- * * * end TEAM page * * * -->
+              </form>
 
 
 
 
-            </div>
+            </div>      
+          </div>
         </div>
         <!-- Audio player -->
         <!-- <div class="essential_audio" data-url="./mp3/dataAloe.mp3" data-autoplay data-loop></div> -->
