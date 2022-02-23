@@ -1,0 +1,43 @@
+/* body {
+	background: #1d1f20;
+	margin-top: 20px;
+	padding: 16px;
+} */
+
+canvas {
+	border: 2px solid rgb(167, 141, 75);
+	background-color: rgb(58, 57, 57);
+	padding: 20px 20px;
+}
+
+.chart-container {
+	position: relative;
+	margin: auto;
+	height: 60vh;
+	width: 80vw;
+}
+
+#numb {
+	color: black;
+}
+
+form {
+	text-align: center;
+	margin: 20px 20px;
+}
+
+h1 {
+	color: whitesmoke;
+	text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    #canvas-forbes::before {
+		display: flex;
+        content: "";
+        width: 50vw;
+        float: left;
+        height: 80%;
+        shape-outside: border-box;           
+    }
+}

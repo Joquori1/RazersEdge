@@ -5,13 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razors Edge Data Visualization</title>
+    <!-- Leaflet's CSS -->
+		<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""
+  />
+  <!-- This must be AFTER Leaflet's CSS -->
+  <script
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""
+  ></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
     <!-- * * * Script Files * * * -->
-    <script type="module" src="./scripts/main.js" defer></script>
+    <!-- <script type="module" src="./scripts/main.js" defer></script> -->
     <script type="module" src="./scripts/script-S.js" defer></script>
+    <style>
+      .container-iss {
+        align-items: center;
+        width: 70%;
+        height: auto;
+      }
+
+      #issMap {
+        height: 480px;
+      }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -20,26 +44,59 @@
         <div class="footer-wrapper" id="navbar-top">
             <ul class="nav-top">
               <li class="footer-item">
-                <a href="#" class="previous">&laquo; Previous</a>
-                <!-- <a class="footer-link active" aria-current="page" href="#">Back</a> -->
-              </li>
-              <li class="footer-item">
-                <a class="footer-link" href="./index.html">Home</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="next">Next &raquo;</a>
-                <!-- <a class="footer-link" href="#">Next</a> -->
+                <a class="footer-link" id="home-button-s1" href="./index.html">Home</a>
               </li>
             </ul>
           </div>
 
         <div class="content">
             <div style="height:1000px;">
+              <!-- * * * start SATELLITE page * * * -->
+            <div class="page" id="home" style="display: block">
 
+              <h5 id="title-iss" style="display: inline-block">Tracking the Orbit of the International Space Station</h5>
 
+              <div class="main-2">
+                <div class="container-2">
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-warning" id="track-iss" style="display: inline-block; text-align: center; margin: 12x 0"><ion-icon name="rocket-outline"></ion-icon> Track It</button>
+                  </div>
+                  <!-- CANVAS FOR CHART -->
+                  <div class="canvas" id="canvas-iss-a" style="display: block; background-image: url(./images/iss4-bg.jpg); margin: 12px auto; width: 550px">
+                  </div>
+                  <!-- * * * start track-ISS DIV * * *  -->
+                <div id="canvas-iss-b">
+                  <div id="title">
+                    <!-- <h1>Track Space Station in Real Time!</h1> -->
+                    <div id="subTitle">
+                      <!-- <h3>
+                        Zoom in or out, pan map around.
+                        <br />
+                      </h3> -->
+                      <div id="disclaim">
+                        <!-- <h5>* Satellite changes location @ 1 second intervals</h5> -->
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div>
+                    <p id="lat-lon" style="display: none; margin: 12px auto; color: silver">
+                      Latitude: <span id="lat"></span>&deg;
+                      <!-- <br /> -->
+                      Longitude: <span id="lon"></span>&deg;
+                    </p>
+                  </div>
+              
+                  <div>
+                    <div class="container-iss" id="issMap" style="display: none"></div>
+                  </div>
+                </div>
+                <!-- * * * end track-ISS DIV * * *  -->
 
-
-
+                </div>
+              </div>
+            </div>
+            <!-- * * * end SATELLITE page * * * -->
             </div>
         </div>
         <!-- Audio player -->
@@ -48,13 +105,13 @@
         <footer class="footer-wrapper">
             <ul class="footer">
               <li class="footer-item">
-                <a class="footer-link active" aria-current="page" href="./index.html">Home</a>
+                <a class="footer-link active" id="home-button-s2" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="footer-item">
-                <a class="footer-link" href="#">Project</a>
+                <a class="footer-link" id="project-button-s1" href="./project.html">Project</a>
               </li>
               <li class="footer-item">
-                <a class="footer-link" href="#">Team</a>
+                <a class="footer-link" id="team-button-s1" href="./team.html">Team</a>
               </li>
             </ul>
         </footer>
@@ -67,9 +124,6 @@
     <!-- * * * links to CSS * * * -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/style-S.css">
-    <!-- * * * links to ESSENTIAL AUDIO files * * * -->
-    <script src="essential_audio.js"></script>
-    <link rel="stylesheet" href="./styles/essential_audio.css"></link>
     <!-- * * * link to our JS SCRIPT files * * * -->
     <!-- <script src="./script.js"></script> -->
 </body>

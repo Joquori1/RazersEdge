@@ -9,9 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
-    <!-- * * * Script Files * * * -->
-    <script type="module" src="./scripts/main.js" defer></script>
-    <script type="module" src="./scripts/script-S.js" defer></script>
+    
 </head>
 <body>
     <div class="wrapper">
@@ -31,29 +29,34 @@
             <div class="page" id="home" style="display: block">
 
                 <h5>Exploring our World through Data Visualization</h5>
-                <p style="margin: 0 auto; text-align: center; font-size: .9em;color: burlywood">Click on a Category to Learn More:</p>
+                <p style="margin: 0 auto; text-align: center; font-size: .9em;color: rgb(194, 171, 111)">Click on a Category to Learn More:</p>
   
                 <div class="main">
                   <div class="container">
+                    
                     <div id="wrapper-1" style="position: relative; background-color: gray;">
-                      <a href="./satellite.html" class="link" id="link-1"></a>
-                      <div id="graph-1" class="container-01" style="background-image: url(./images/iss3_HEX.jpg)">
-                      </div>
+                      <a href="./forbes.html" class="link" id="link-2">
+                        <div data-tooltip="Highest Net Worth Individuals" id="graph-1" style="background-image: url(./images/rollsRoyce2_HEX.jpg)"></div>
+                      </a>
                     </div>
   
                     <div id="wrapper-2" style="position: relative; background-color: gray;">
-                      <a href="./netWorth.html" class="link" id="link-2"></a>
-                      <div id="graph-2" style="background-image: url(./images/rollsRoyce2_HEX.jpg)"></div>
+                      <a href="./population.html" class="link" id="link-3">
+                        <div data-tooltip="US Population Life Expectancy" id="graph-2" style="background-image: url(./images/crowd_HEX.jpg)"></div>
+                      </a>
                     </div>
   
                     <div id="wrapper-3" style="position: relative; background-color: gray;">
-                      <a href="./population.html" class="link" id="link-3"></a>
-                      <div id="graph-3" style="background-image: url(./images/crowd_HEX.jpg)"></div>
+                      <a href="./temperature.html" class="link" id="link-3">
+                        <div data-tooltip="Global Average Temperature" id="graph-3" style="background-image: url(./images/thermo_HEX.jpeg)"></div>
+                      </a>
                     </div>
-  
+
                     <div id="wrapper-4" style="position: relative; background-color: gray;">
-                      <a href="./temperatures.html" class="link" id="link-3"></a>
-                      <div id="graph-3" style="background-image: url(./images/thermo_HEX.jpeg)"></div>
+                      <a href="./satellite.html" class="link" id="link-4">
+                        <div data-tooltip="Where Is the ISS?" id="graph-4" class="container-01" style="background-image: url(./images/iss3_HEX.jpg)">
+                        </div>
+                      </a>
                     </div>
   
                   </div>
@@ -63,7 +66,7 @@
             </div>
         </div>
         <!-- AUDIO PLAYER -->
-        <div class="essential_audio" data-url="./mp3/dataAloe.mp3" data-autoplay data-loop></div>
+        <!-- <div class="essential_audio" data-url="./mp3/dataAloe.mp3" data-autoplay data-loop></div> -->
         <!-- * * * FOOTER * * *  -->
         <footer class="footer-wrapper">
             <ul class="footer">

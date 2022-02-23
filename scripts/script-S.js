@@ -8,9 +8,8 @@ function displayISS() {
     document.getElementById("canvas-iss-a").style.display="none";
 	document.getElementById("title-iss").style.display="none";
 	document.getElementById("track-iss").style.display="none";
-    document.getElementById("canvas-iss-b").style.display="block";
-
-    let activeDIV = document.getElementById("canvas-iss-b");
+    document.getElementById("issMap").style.display="block";
+	document.getElementById("lat-lon").style.display="block";
 
     getISS();
 
@@ -59,8 +58,13 @@ async function getISS() {
 	// console.log(data.longitude);
 }
 
-// getISS();
+// * * * start 04 SATELLITE state management * * *
+document.getElementById("home-button-s1").addEventListener("click", manageState4);
+document.getElementById("home-button-s2").addEventListener("click", manageState4);
+document.getElementById("project-button-s1").addEventListener("click", manageState4);
+document.getElementById("team-button-s1").addEventListener("click", manageState4);
 
-// setInterval(getISS, 1000);
-
-// export { mymap, attribution, tileUrl, tiles, issIcon, marker, api_url, firstTime, getISS setInterval }
+function manageState4() {     
+    document.getElementById("issMap").style.display="none";
+    document.getElementById("canvas-iss-a").style.display="block";
+}
