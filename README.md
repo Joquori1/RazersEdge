@@ -24,15 +24,7 @@ Our web app leverages charting libraries to build charts, graphs and maps using 
 
 ### <b>Technical Requirements</b>
 
-<ul>
-    <li>Front End application</li>
-    <li>JavaScript, HTMLs and CSS</li>
-    <li>Access at least 2 remote APIs (or 1 API and 1 Library)</li>
-    <li>Mobile first, responsive design</li>
-    <li>A clear and well written README.md file</li>
-    <li>A minimum of 1 pull request merged into the main branch per team member</li>
-    <li>Bonus (optional): deploy project to AWS, Heroku or Netlify</li>
-</ul>
+Build a front end, mobile first, responsive web app using JavaScript, HTML and CSS.
 
 ### <b>Team Response A: Fulfillment of Technical Requirements</b>
 
@@ -62,18 +54,7 @@ Our web app leverages charting libraries to build charts, graphs and maps using 
 
 ### <b>Workflow Requirements</b>
 
-<ul>
-    <li>Create one GitHub repository.</li>
-    <li>Team members are added as collaborators.</li>
-    <li>Collaborators shall clone the repo & start a new branch.</li>
-    <li>Use GitHub Project Boards as a feature tracking system for SCRUM.</li>
-    <li>Collaborate with Pull Request, making sure to tag a reviewer for approval.</li>
-    <li>Do not commit anything to the Main branch.</li>
-    <li>Do not merge your code to Main.</li>
-    <li>Work on a branch of Main and merge your work through Pull Requests.</li>
-    <li>Have other teammates be Reviewers for your Pull Requests.</li>
-</ul>
-
+Create and use GitHub repository. Collaborators shall clone the repo and checkout, work on, commit and push branches up to GitHub. Branches shall be review and merged into main by another team member. 
 
 ### <b>Team Response B: Fulfillment of Workflow Requirements</b>
 
@@ -85,15 +66,34 @@ Our web app leverages charting libraries to build charts, graphs and maps using 
     <li>Team members were added as collaborators.</li>
     <li>Collaborators cloned the repo & each started a new branch.</li>
     <li>GitHub Project Boards were used as a feature tracking system for SCRUM.</li>
-    <li>Collaborate used Pull Requests, making sure to tag a reviewer for approval.</li>
+    <li>Collaborators used Pull Requests, making sure to tag a reviewer for approval.</li>
     <li>Collaborators did not commit anything directly to the Main branch.</li>
     <li>Collaborators worked on branches of Main and merged our work through Pull Requests.</li>
     <li>Collaborators had other teammates be Reviewers for their Pull Requests.</li>
 </ol>
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
+### Built With
+
+* [JSCharting v3.2](https://jscharting.com/)
+* [Chart.js v3.5](https://www.chartjs.org/)
+* [Leaflet v1.7.1](https://leafletjs.com/)
+* [Bootstrap v5.1.3](https://getbootstrap.com/)
+* [Ionicons v5.5.2](https://ionic.io/ionicons)
+* [Google Fonts](https://fonts.google.com/)
+* [Bootstrap](https://getbootstrap.com)
+* [Open Street Map](https://www.openstreetmap.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+
+
+
+
 
 
 
