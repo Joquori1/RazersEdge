@@ -219,7 +219,7 @@ Project Link: [https://github.com/Joquori1/RazorsEdge/tree/main](https://github.
 This project would not have been possible without the support and encouragement of the following individuals:
 
 <ol>
-  <li>Our instructor <b>Ron Cagle</b> at Kingsland University for expertly playing the role of Mr Miyagi to our cohort of aspiring developers, and for being the best student advocate one could ever hope for.</li><br>
+  <li>Our instructor <b>Ron Cagle</b> at Kingsland University for expertly playing the role of Mr Miyagi to our cohort of aspiring developers, and for being the best student advocate we could ever hope for.</li><br>
   <li><b>Jesse Henley</b> for always keeping the study hall open...<b>Manny Muro</b> for the encouraging words, and for supplying crucial just-in-time helpful tips...<b>Ryan Drachenberg</b> and <b>Eric Carve</b> for watching out for students needing assistance on the technical-questions channel...and all our fine classmates named and un-named who continually help us to get unstuck and who contribute so mightily to the hive mind.</li><br>
   
 
