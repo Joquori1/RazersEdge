@@ -138,7 +138,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-1. Node.js and GitHub should be installed and accessible through the terminal from your IDE.
+1. <a href="https://nodejs.org/en/download/">Node.js</a> and <a href="https://github.com/git-guides/install-git">GitHub<a> should be installed and accessible through the terminal from your IDE.
 
 ### Installation
 
