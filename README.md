@@ -69,7 +69,7 @@ Build a front end, mobile first, responsive web app using JavaScript, HTML and C
 
 ### Workflow Requirements
 
-Create and use GitHub repository. Collaborators shall clone the repo and checkout, work on, commit and push branches up to GitHub. Branches shall be review and merged into main by another team member.
+Create and use GitHub repository. Collaborators shall clone the repo and checkout, work on, commit and push branches up to GitHub. Branches shall be reviewed and merged into main by another team member.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
