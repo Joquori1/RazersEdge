@@ -92,7 +92,7 @@ Create and use GitHub repository. Collaborators shall clone the repo and checkou
         <li><b>Bootstrap</b> framework</li>
         <li>Our home page uses a combination of a CSS clip-path generator and a pseudo element 'shim' to create and position hexagonal, gateway 'buttons' that link to their respective dataset-category pages. The positions of the hexagonal buttons are designed to expand and contract depending on the user's screen size.</li>
     </ol>
-    <li>Our README.md file is based on a pared down version of a popular template from GitHub.</li>
+    <li>Our README.md file is modelled on a popular README.md template from GitHub.</li>
     <li>Each team member made a minimum of at least one pull request merged into the main.</li>
     <li>We deployed our project on Netlify.</li>
 </ol>
