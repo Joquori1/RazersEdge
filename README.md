@@ -106,10 +106,13 @@ Create and use GitHub repository. Collaborators shall clone the repo and checkou
     <li>Team members were added as collaborators.</li>
     <li>Collaborators cloned the repo & each started a new branch.</li>
     <li>GitHub Project Boards were used as a feature tracking system for SCRUM.</li>
-    <li>Collaborators used Pull Requests, making sure to tag a reviewer for approval.</li>
-    <li>Collaborators did not commit anything directly to the Main branch.</li>
-    <li>Collaborators worked on branches of Main and merged our work through Pull Requests.</li>
-    <li>Collaborators had other teammates be Reviewers for their Pull Requests.</li>
+    <li>Collaborators on GitHub:</li>
+    <ul>
+      <li>used Pull Requests, making sure to tag a reviewer for approval.</li>
+      <li>did not commit anything directly to the Main branch.</li>
+      <li>worked on branches of Main and merged our work through Pull Requests.</li>
+      <li>had other teammates be Reviewers for their Pull Requests.</li>
+    <ul>  
 </ol>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
