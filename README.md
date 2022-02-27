@@ -79,8 +79,8 @@ Create and use GitHub repository. Collaborators shall clone the repo and checkou
     <li>Project is an entirely Front End application.</li>
     <li>Only JavaScript, HTML, CSS and associated libraries were used.</li>
     <li>No Backend, Node, database or user registration/login was used.</li>
-    <li>We accessed 2 remote APIs: Forbes & ISS satellite real-time API endpoints. Two other datasets were fetched as CSV files and parsed into JSON.</li>
-    <li>We also used 3 charting libraries:  </li>
+    <li>We accessed two (2) remote APIs: Forbes & ISS satellite real-time API endpoints. Two other datasets were fetched as CSV files and parsed into JSON.</li>
+    <li>We also used three (3) charting libraries:  </li>
     <ol type="a">
         <li><b>Chart.js</b> for the Forbes & temperature datasets</li>
         <li><b>JSCharting</b> for the life expectancy dataset</li>
