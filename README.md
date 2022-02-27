@@ -58,7 +58,7 @@
 
 ### Project Overview
 
-Razors Edge's data visualization web application is a class project for the <b>Kingsland University Full Stack Developer</b> program.
+The Razors Edge Data Visualization web application is a class project for the <b>Kingsland University Full Stack Developer</b> program.
 
 Our web app leverages charting libraries to build charts, graphs and maps using datasets pulled from a series of APIs.
 <br><br>
