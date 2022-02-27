@@ -63,7 +63,7 @@ The Razors Edge Data Visualization web application is a class project for the <a
 Our web application leverages charting libraries to build charts, graphs and maps using datasets pulled from a series of APIs.
 <br><br>
 
-#### Note: GitHub does not currently support markdown to enable links to open in a new tab. To do this, users can just do a CTRL+click (on Windows and Linux) or CMD+click (on MacOS) on the link, the get the same behavior.
+<sub><sup>* Note: GitHub does not currently support markdown to enable links to open in a new tab. To do this, users can just do a CTRL+click (on Windows and Linux) or CMD+click (on MacOS) on the link, the get the same behavior.<sup><sub>
 
 ### Technical Requirements
 
