@@ -2,7 +2,7 @@
 <div id="top"></div>
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://razorsedge2022.netlify.app/" target="_blank">
     <img src="./images/11.png" alt="Logo" width="200" height="200">
   </a>
 
