@@ -61,9 +61,9 @@
 The Razors Edge Data Visualization web application is a class project for the <a href="https://kingslanduniversity.com/full-stack-developer-program/">Kingsland University Full Stack Developer Program*.</a>
 
 Our web application leverages charting libraries to build charts, graphs and maps using datasets pulled from a series of APIs.
-<br><br>
+<br>
 
-<sub><sup>* Note: GitHub does not currently support markdown to enable links to open in a new tab. To do this, users can just do a CTRL+click (on Windows and Linux) or CMD+click (on MacOS) on the link, the get the same behavior.<sup><sub>
+<sub>* Note: GitHub does not currently support markdown to enable links to open in a new tab. To do this, users can just do a CTRL+click (on Windows and Linux) or CMD+click (on MacOS) on the link, the get the same behavior.<sub>
 
 ### Technical Requirements
 
