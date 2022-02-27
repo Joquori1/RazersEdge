@@ -2,7 +2,7 @@
 <div id="top"></div>
 <br />
 <div align="center">
-  <a href="https://razorsedge2022.netlify.app/" target="_blank" rel="noopener noreferrer">
+  <a href="https://razorsedge2022.netlify.app/">
     <img src="./images/11.png" alt="Logo" width="200" height="200">
   </a>
 
