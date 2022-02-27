@@ -83,7 +83,7 @@ Create and use GitHub repository. Collaborators shall clone the repo and checkou
     <li>We also used 3 charting libraries:  </li>
     <ol type="a">
         <li><b>Chart.js</b> for the Forbes & temperature datasets</li>
-        <li><b>JSCharting</b> for the life expectancy dataset, </li>
+        <li><b>JSCharting</b> for the life expectancy dataset</li>
         <li><b>Leaflet</b> for the ISS dataset</li>
     </ol>
     <li>We used the <b>Ionicons</b> library for the icons featured on a few of the 'Chart It' buttons.</li>
