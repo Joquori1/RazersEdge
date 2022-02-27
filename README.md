@@ -58,7 +58,7 @@
 
 ### Project Overview
 
-The Razors Edge Data Visualization web application is a class project for the <b>Kingsland University Full Stack Developer</b> program.
+The Razors Edge Data Visualization web application is a class project for the <a href="https://kingslanduniversity.com/full-stack-developer-program/">Kingsland University Full Stack Developer Program.</a>
 
 Our web application leverages charting libraries to build charts, graphs and maps using datasets pulled from a series of APIs.
 <br><br>
@@ -122,7 +122,6 @@ Create and use GitHub repository. Collaborators shall clone the repo and checkou
 * [Bootstrap v5.1.3](https://getbootstrap.com/)
 * [Ionicons v5.5.2](https://ionic.io/ionicons)
 * [Google Fonts](https://fonts.google.com/)
-* [Bootstrap](https://getbootstrap.com)
 * [Open Street Map](https://www.openstreetmap.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -151,7 +150,7 @@ To get a local copy up and running follow these simple example steps.
 
 Visitors are encouraged to explore charting features of the web app, and to go to our GitHub repository to examine the code behind the functionality of the web app.
 
-Web App Link: [https://github.com/Joquori1/RazorsEdge/tree/main](https://github.com/Joquori1/RazorsEdge/tree/main)
+Web App Link: [https://razorsedge2022.netlify.app/](https://razorsedge2022.netlify.app/)
 
 GitHub Link: [https://github.com/Joquori1/RazorsEdge/tree/main](https://github.com/Joquori1/RazorsEdge/tree/main)
 
@@ -166,8 +165,8 @@ The following are known, open issues:
 
 <ol>
   <li><b> Front end fusion of APIs for data visualization through JS Charting.</b> These charts are not supported on IE11 or sooner browsers. One of the charting libraries used is from JSCharting. The native fetch() function is not supported in Internet Explorer 11. If you want to support this browser as well, you can use the JSC.fetch() function which comes with JSCharting. It provides the same functionality, but adds additional support for IE11.</li><br>
-  <li><b>Data visualization of highest net worth individuals.</b> Once the page loads, the user is asked to enter a number from 1-20 in the form, and click "Chart-it". For the initial run, the bar graph loads correctly and you can mouseover each bar to get additional data via a pop-up/tooltip. All is good and works fine... but now, enter in the text box again, a different number, submit it and the graph will render as it should, but now try and mouseover the graphs' bars and the page bars go "wonky". It appears that the data fetched for the previous graph persists in a memory cache, and this distorts the accurate display of data in the po-up/tooltip upon mouseover of each bar in the bar graph.</li><br>
-  <li><b>Data visualization of the ISS(International Space Station).</b> Once the "Chart-it" button is clicked, a map showing an icon representing the ISS moving across a map of the globe should display. In actuality, the map only begins populating as intended when the browser window is manually "jiggered" by stretching the browser window slightly. The reason for map thus stalling is not currently known.</li><br>
+  <li><b>Data visualization of Highest Net Worth Individuals.</b> Once the page loads, the user is asked to enter a number from 1-20 in the form, and click "Chart-it". For the initial run, the bar graph loads correctly and you can mouseover each bar to get additional data via a pop-up/tooltip. All is good and works fine... but if you then enter input to the text box again, a different number, and submit it- the graph will render as it should, but now try and mouseover the graphs' bars and the page bars go "wonky". It appears that the data fetched for the previous graph persists in a memory cache, and this distorts the accurate display of the bar charts (they "blink"). Also, data in the pop-up/tooltip upon mouseover of each bar in the bar graph appear to be from the previous bar chart.</li><br>
+  <li><b>Data visualization of the ISS(International Space Station).</b> Once the "Chart-it" button is clicked, a map showing an icon representing the ISS moving across a map of the globe should display. In actuality, the tiles of the map only begins populating and the ISS icon only begins moving as intended when the browser window is manually "jiggered" by stretching the browser window slightly. The reason for the map thus stalling is not currently known.</li><br>
   <li><b>Responsive expansion and contraction of hexagonal "buttons" on the landing page.</b> The positions of the hexagonal buttons on the landing page are designed to expand and contract depending on the width of the viewing device or browser window. The hexagons currently overlap in an unintended way at certain widths. We believe that the geometry of the clip-paths defining the hexagons can be further refined to make the movement and stacking of the hexagonal buttons more seamless.</li><br>
 </ol>
 
@@ -219,12 +218,8 @@ Project Link: [https://github.com/Joquori1/RazorsEdge/tree/main](https://github.
 This project would not have been possible without the support and encouragement of the following individuals:
 
 <ol>
-  <li>Our instructor <b>Ron Cagle</b> at Kingsland University for expertly playing the role of Mr Miyagi to our cohort of aspiring developers, and for being the best student advocate we could ever hope for.</li><br>
-  <li><b>Jesse Henley</b> for always keeping the study hall open...<b>Manny Muro</b> for the encouraging words, and for supplying crucial just-in-time helpful tips...<b>Ryan Drachenberg</b> and <b>Eric Carve</b> for watching out for students needing assistance on the technical-questions channel...and all our fine classmates named and un-named who continually help us to get unstuck and who contribute so mightily to the hive mind.</li><br>
-  
-
-
-
+  <li>Our instructor <b>Ron Cagle</b> at <a href="https://kingslanduniversity.com/">Kingsland University</a> for expertly playing the role of Mr Miyagi to our cohort of aspiring developers, and for being the best student advocate we could ever hope for.</li><br>
+  <li><b>Jesse Henley</b> for always keeping the study hall open...<b>Manny Muro</b> for the encouraging words, and for supplying crucial just-in-time helpful tips...<b>Ryan Drachenberg</b> and <b>Eric Carve</b> for watching out for students needing assistance on the technical-questions channel...and all our fine classmates named and un-named who give us a sense of community, continually help us to get unstuck and who enrich our commonwealth of knowledge by contributing mightily to the hive mind.</li><br>
 </ol>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
