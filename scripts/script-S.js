@@ -49,7 +49,7 @@ async function getISS() {
 	marker.setLatLng([latitude, longitude]);
 	if (firstTime) {
 		mymap.setView([latitude, longitude], 5);
-		firstTime = false;
+		firstTime = true;
 	}
 	document.getElementById("lat").textContent = latitude.toFixed(2);
 	document.getElementById("lon").textContent = longitude.toFixed(2);
