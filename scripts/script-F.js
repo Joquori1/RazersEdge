@@ -46,7 +46,7 @@ frm.addEventListener("submit", (e) => {
 			});
 			// Map json values back to values array
 			let values = data.map(function (e) {
-				return e.finalWorth / 1000; // Divide to billions in units of ten
+				return (e.finalWorth / 1000).toFixed(2); // Divide to billions in units of ten
 			});
 			BuildChart(labels, values, "Real Time Net Worth");
 		})
